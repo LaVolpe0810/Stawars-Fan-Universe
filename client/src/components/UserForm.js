@@ -34,6 +34,7 @@ const UserForm = () => {
     
     return(
         <div className="container">
+            
             <h1>User Information</h1>
             <form onSubmit={newUser}>
                     <div className="form-group">
