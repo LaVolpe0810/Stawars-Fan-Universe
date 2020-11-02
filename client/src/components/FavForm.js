@@ -24,7 +24,7 @@ const FavForm = () => {
             if (res.data.errors) {
                 setErrs(res.data.errors);
             } else {
-                navigate("");
+                navigate("/home");
             }
         })
         .catch(err => console.log(err));
@@ -32,6 +32,7 @@ const FavForm = () => {
     }
     return (
         <div className="container">
+            <h1>Your Favorites</h1>
         <form onSubmit={newFav}>
                 <div className="form-group">
                     <label for="movie">Favorite Movie:</label>

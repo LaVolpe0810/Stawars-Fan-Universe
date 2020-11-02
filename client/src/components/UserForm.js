@@ -26,7 +26,7 @@ const UserForm = () => {
                 if (res.data.errors) {
                     setErrs(res.data.errors);
                 } else {
-                    navigate("");
+                    navigate("/fav/new");
                 }
             })
             .catch(err => console.log(err));
@@ -34,6 +34,7 @@ const UserForm = () => {
     
     return(
         <div className="container">
+            <h1>User Information</h1>
             <form onSubmit={newUser}>
                     <div className="form-group">
                         <label for="firstname">First Name:</label>
