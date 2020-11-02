@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: [true, "Your email is required"]
     },
-    userName: {
+    username: {
         type: String,
         required: [true, "A username is required"]
     },

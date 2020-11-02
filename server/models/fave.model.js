@@ -10,7 +10,7 @@ const FaveSchema = new mongoose.Schema({
         required: [true, "A lightsaber color is required"],
         minlength: [3, "Must be at least 3 characters"]
     },
-    qutoe: {
+    quote: {
         type: String,
         required: [true, "A quote is required"]
     },
