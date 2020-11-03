@@ -24,7 +24,7 @@ const Home = () => {
                         <Link to="/home" style={{margin: '5px'}}>Home</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="" style={{margin: '5px'}}>Account</Link>
+                        <Link to="/account/edit" style={{margin: '5px'}}>Account</Link>
                     </li>
                     <li class="nav-item">
                         <Link to="" style={{margin: '5px'}}>Movies</Link>
