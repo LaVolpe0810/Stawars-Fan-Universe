@@ -58,7 +58,7 @@ const FavForm = () => {
                 </div>
             </nav>
             <h1>Your Favorites</h1>
-        <form onSubmit={newFav}>
+        <form onSubmit={newFav} className="col-md-6" style={{display: "inline-block"}}>
                 <div className="form-group">
                     <label for="movie">Favorite Movie:</label>
                     {errs.movie ? <span className="text-danger small">{errs.movie.message}</span> : null}

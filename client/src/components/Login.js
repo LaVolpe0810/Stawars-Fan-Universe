@@ -7,7 +7,7 @@ const Login = () => {
         <div className='container'>
             <h1>Login</h1>
             <Link to="/user/new" style={{marginLeft: '800px'}}>Not a Member? Register</Link>
-            <form>
+            <form className="col-md-6" style={{display: "inline-block"}}>
                         <div className="form-group">
                             <label for="username">Username:</label>
                             <input type="text" name="username" className="form-control"/>

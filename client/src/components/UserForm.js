@@ -36,7 +36,7 @@ const UserForm = () => {
         <div className="container">
             
             <h1>User Information</h1>
-            <form onSubmit={newUser}>
+            <form onSubmit={newUser} className="col-md-6" style={{display: "inline-block"}}>
                     <div className="form-group">
                         <label for="firstname">First Name:</label>
                         {errs.firstName ? <span className="text-danger small">{errs.firstName.message}</span> : null}

@@ -129,7 +129,7 @@ const Account = (props) => {
                         <input type="text" name="confirm" onChange= { e => setConfirm(e.target.value)} value={confirm} className="form-control"/>
                     </div>
             </form>
-            <form className="col-md-6" style={{display: "inline-block"}}>
+            <form className="col-md-6" style={{display: "inline-block", verticalAlign: "top"}}>
                     <h1>Favorites</h1>
                     <div className="form-group">
                         <label for="movie">Favorite Movie:</label>

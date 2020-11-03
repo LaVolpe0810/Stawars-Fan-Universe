@@ -49,7 +49,7 @@ const Home = () => {
             <div className='container' style={{backgroundColor: "grey", width: "500px", border: "solid"}}>
             <h3>Vist the offical StarWars website!</h3>
             </div>
-            <a href="https://www.starwars.com/"><button type='button' className="btn btn-primary" >StarWars.com</button></a>
+            <a href="https://www.starwars.com/" target="_blank" rel="noopener noreferrer"><button type='button' className="btn btn-primary" >StarWars.com</button></a>
         </div>
     )
 }
