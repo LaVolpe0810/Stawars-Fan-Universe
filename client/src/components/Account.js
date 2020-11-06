@@ -82,10 +82,10 @@ const Account = (props) => {
                         <Link to="/home" style={{margin: '5px'}}>Home</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="/account/edit" style={{margin: '5px'}}>Account</Link>
+                        <Link to="/account/edit/:id" style={{margin: '5px'}}>Account</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="" style={{margin: '5px'}}>Movies</Link>
+                        <Link to="/movies" style={{margin: '5px'}}>Movies</Link>
                     </li>
                     <li class="nav-item">
                         <Link to="" style={{margin: '5px'}}>Lightsabers</Link>
@@ -133,7 +133,7 @@ const Account = (props) => {
                     <h1>Favorites</h1>
                     <div className="form-group">
                         <label for="movie">Favorite Movie:</label>
-                        {errs.movie ? <span className="text-danger small">{errs.movie.message}</span> : null}
+                        {errs2.movie ? <span className="text-danger small">{errs2.movie.message}</span> : null}
                         <input type="text" name="movie" onChange= { e => setMovie(e.target.value)} value={movie} className="form-control"/>
                     </div>
                     <div className="form-group">

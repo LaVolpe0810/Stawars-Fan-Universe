@@ -7,17 +7,19 @@ import Banner from './components/Banner';
 import Home from './components/Home';
 import Login from './components/Login';
 import Account from './components/Account';
+import Movies from './components/Movies';
 
 
 function App() {
   return (
     <div className="App">
-      <Banner />
+    <Banner />
      <Router>
        <Login path="/"/>
        <UserForm path="/user/new"/>
        <FavForm path="/fav/new"/>
-       <Account path="/account/edit"/>
+       <Account path="/account/edit/:id"/>
+       <Movies path="/movies"/>
        <Home path="/home"/>
      </Router>
     </div>
